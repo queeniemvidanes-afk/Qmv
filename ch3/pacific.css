@@ -1,46 +1,39 @@
 body {
-    background-color: #FFF8DC;
-    color: #556B2F;
-    font-family: Arial, Verdana, sans-serif;
-}
-
+       background-color: #FFFFFF; 
+       color: #666666;
+       font-family: Arial, Verdana, sans-serif; 
+}      
 header{
-    background-color: #A;5F9A0;
-    color: #87CEFA;
-    font-family: Georgia, serif;
+     background-color: #002171; 
+     color: #FFFFFF; 
+     font-family: Georgia, serif;
 }
-
-h1{
+h1 { 
     line-height: 200%;
 }
-
-h2{
-    color: #B0C4DE;
-    font-family: Georgia, serif;
+h2 {
+     color: #1976D2; 
+	 font-family: Georgia, serif;
 }
-
-nav{
-    font-weight: bold;
-    background-color: #87CEFA;
+nav {
+     font-weight: bold;
+     background-color: #BBDEFB;
 }
-
-dt{
-    color: #4169E1;
+dt {
+    color: #002171;
     font-weight: bold;
 }
-
-.resort{
-    color: #afeeee;
-    font-size: 1.2em;
+.resort {
+         color: #1976d2;
+         font-size: 1.2em; 
 }
-
-footer{
-    font-size: .70em;
-    text-align: center;
-    font-style: italic;
+footer {
+         font-size: .70em;
+         text-align: center;
+         font-style: italic 
 }
-#wrapper{
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+wrapper { 
+           width: 80%;
+           margin-right: auto;
+           margin-left: auto; 
 }
