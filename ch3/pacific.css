@@ -1,12 +1,12 @@
 body {
-    background-color: #FFFFFF;
-    color: #666666;
+    background-color: #FFF8DC;
+    color: #556B2F;
     font-family: Arial, Verdana, sans-serif;
 }
 
 header{
-    background-color: #002171;
-    color: #FFFFFF;
+    background-color: #A;5F9A0;
+    color: #87CEFA;
     font-family: Georgia, serif;
 }
 
@@ -15,22 +15,22 @@ h1{
 }
 
 h2{
-    color: #1976d2;
+    color: #B0C4DE;
     font-family: Georgia, serif;
 }
 
 nav{
     font-weight: bold;
-    background-color: #BBDEFB;
+    background-color: #87CEFA;
 }
 
 dt{
-    color: #002171;
+    color: #4169E1;
     font-weight: bold;
 }
 
 .resort{
-    color:#002171;
+    color: #afeeee;
     font-size: 1.2em;
 }
 
