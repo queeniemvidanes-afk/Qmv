@@ -194,17 +194,4 @@ nav ul{
     margin:auto;
     width:80%;
  }  
-
- #homehero{
-    background-size: 100% 100%;
-  /*  background-image: url(coast.jpg) no-repeat; */
-}
-#yurthero {
-    background-size: 100% 100%; 
-    /* background-image: url(yurt.jpg) no-repeat; */
-}
-#trailhero {
-    background-size: 100% 100%;
-  /*  background-image: url(trail.jpg) no-repeat; */
-}
 }

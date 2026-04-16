@@ -19,8 +19,8 @@ header a:visited{color:#FFFFFF;}
 header a:hover{color:#90c7e3;}
 
 main{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
     display: block;
     background-color: #ffffff;
     margin-left: 170px;
@@ -30,7 +30,7 @@ main{
 h1 { 
     text-align: center;
     padding-top: .5em;
-    font-size: 3em;
+    font-size: 4em;
     letter-spacing:0.25cm;
 }
 
