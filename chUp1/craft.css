@@ -1,0 +1,193 @@
+body {
+       background-color: #faebd7; 
+       color:#0c82d1cc;
+       font-family:Arial, Verdana, sans-serif; 
+       background-repeat:no-repeat;
+	   background-image:linear-gradient(to bottom, #FFFFFF, #b290e3);
+    }
+
+header{
+     background-color: #b290e3; 
+     color: #ff6347; 
+     font-family: Georgia, serif;
+     background-image: url(); 
+	 background-position: right;
+	 background-repeat: no-repeat;
+	 height: 50px; 
+
+}
+
+main{
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(43, 60%, 55%);
+    margin: 5px;
+}
+
+.gallery.description{
+    padding: 10px;
+    text-align: center;
+}
+
+
+h1 { 
+    text-align: center;
+    padding-top: .5em;
+}
+
+h2 {
+     color: #d8165e; 
+	 font-family: Georgia, serif;
+}
+
+
+h3{
+    font-family: Georgia,serif;
+}
+
+nav {
+     font-weight: bold;
+     background-color: #ffdab9;
+     padding-top: .5em;
+     padding-right:.5em;
+     padding-bottom: .5em;
+     text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+.resort {
+      color: #1976d2;
+     font-size: 1.2em; 
+}
+
+footer {
+     font-size: .70em;
+     text-align: center;
+     font-style: italic;
+     padding: 1em; 
+}
+
+#wrapper { 
+       width: 80%;
+       margin-right: auto;
+       margin-left: auto;
+       background-color: #ffb349;
+       min-width: 960px;
+       max-width: 2048px;
+       box-shadow: 5px 5px 5px #1e1e1e;
+}
+
+h3 {
+    font-family: Georgia,serif;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(Cardboard.jpgS);
+    background-size: 100% 100%; 
+}
+#galleryhero {
+    height: 300px;
+    background-image: url(yurts.jpg);
+    background-size: 100% 100%; 
+}
+#referencehero {
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-size: 100% 100%; 
+}
+
+/* Medium Display */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
+
+    nav li {
+        width: 12em;
+        border-bottom: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    #homehero {
+        background-size: 100% 100%;
+    }
+
+    #yurthero {
+        background-size: 100% 100%;
+
+    }
+
+    #trailhero {
+        background-size: 100% 100%;
+    }
+
+    form {
+        display: grid;
+        width: 60%;
+        grid-gap: 1em;
+        grid-template-columns: 10em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 9em;
+    }
+
+    #reshero {
+        background-size: 100% 100%;
+    }
+}
+
+/* Large Display */
+@media (min-width: 1024px) {
+    body {
+        background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
+    }
+
+    nav ul {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    #wrapper {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+
+
