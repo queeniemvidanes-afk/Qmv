@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pacific Trails Resort:: Yurts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="select pacific trails resort trip packages and calculate your total cost.">
+    <link href="pacific.css" rel="stylesheet"/>
+  <script>
+    function calculateTotal(){
+      let total = 0;
+      if (document.getElementById("weekend").checked){
+          total += 450;
+      }
+      if (document.getElementById("zen").checked){
+          total += 600;
+      }
+      if (document.getElementById("kayak").checked){
+          total += 500;
+      }
+    alert("Your total package price is $ + total.toFixed"(2));
+    return false;
+    }  
+  </script>  
+  </head>
+  <body>
+  <Header>  
+    <h1>
+      <a href="index.html">Pacific Trails Resort</a>
+    </h1>
+  </Header>
+<nav>
+  <ul>
+      <li> <a href="index.html">Home</a> &nbsp;</li>
+      <li> <a href="activities.html">Activities</a> &nbsp;</li>
+      <li> <a href="reservations.html">Reservations</a></li>
+      <li> <a href="yurts.html">Yurts</a> &nbsp;</li>
+      <li> <a href="yurtsPackages.html">Yurts Packages</a> &nbsp;</li>
+  </ul>        
+</nav>
+<div id="wrapper">
+<div id = "yurthero"></div>
+ <main>
+   <h2>Trip Packages</h2>
+   <p>Select one or more packages to calculate total price</p>
+<form onsubmit="return calculateTotal();">
+ <p>
+  <input type="checkbox" id="weekend" name="weekend" value="450">
+  <label for="weekend">Weekend Escape - $450</label>
+  </p>
+  
+<p>
+  <input type="checkbox" id="zen" name="zen" value="600">
+  <label for="zen">Zen Retreat - $600</label>
+  </p>
+
+<p>
+  <input type="checkbox" id="kayak" name="kayak" value="500">
+  <label for="kayak">Kayak Away - $500</label>
+  </p>
+<input type="submit" value="Calculate Total">
+
+  </main>
+    <footer>
+        <small><i>Copyright &copy; 2020 Pacific Trails Resort<br>
+        <a href="mailto:Queenie@Vidanes.com">Queenie@Vidanes.com</a></i></small>
+    </footer>
+    </div>
+  </body>
+</html>
