@@ -1,6 +1,30 @@
+table {
+    border-collapse:collapse;
+    margin:auto;
+    border:1px solid #7912ff;
+    width:100%;
+}
+
+td,th{
+    padding:8px;
+    border:1px solid#6c1cdc;
+}
+
+td{
+    text-align:center;
+}
+
+.text{
+    text-align:left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #ccc;
+}
+
 body {
        background-color: #faebd7; 
-       color:#0c82d1cc;
+       color:#a600ff;
        font-family:Arial, Verdana, sans-serif; 
        background-repeat:no-repeat;
 	   background-image:linear-gradient(to bottom, #FFFFFF, #b290e3);
@@ -8,13 +32,13 @@ body {
 
 header{
      background-color: #b290e3; 
-     color: #ff6347; 
+     color: #05f4eca1; 
      font-family: Georgia, serif;
-     background-image: url(); 
-	 background-position: right;
+     background-image: url(img/A&C.webp); 
+	 background-position: center;
 	 background-repeat: no-repeat;
-	 height: 50px; 
-
+	 height: 60px; 
+     width:auto;
 }
 
 main{
@@ -34,40 +58,17 @@ div.scroll-container{
 div.scroll-container img{
     padding: 10px;
 }
-.gallery{
-     background-color: #b290e3; 
-    gap: 20px;
-    border: 1px solid hsl(290, 60%, 55%);
-    margin: 10px
-}
-
-
-
-.gallery.description{
-    padding: 10px;
-    text-align: center;
-}
-
-.gallery:hover{
-    border: 1px solid hsl(297, 38%, 39%);
-}
-
-.gallery images{
-    width: 100;
-    height: 100;
-    border-radius:8px;
-}
 
 div.gallery{
-    border: 1px solid rgb(206, 72, 224)
+    border: 1px solid #ccc;
 }
-
+s
 div.gallery:hover{
-    border: 1px slid #e3d490
+    border:1px solid #777
 }
 
 div.gallery img{
-    width:100;
+    width: 50%;
     height: auto;
 }
 
@@ -76,18 +77,70 @@ div.desc{
     text-align: center;
 }
 
-*{box-sizing: borderbox;}
+*{box-sizing: border-box;}
 
-.responsive{
-    padding: 0 6px;
-    float:left;
-    width: 24.9999em;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.gallery-item .desc {
+  text-align: center;
+  padding-top: 8px;
+  font-size: 0.9em;
+}
+
+
 
 h1 { 
-    text-align: left;
-    padding-top: .5em;
+    text-align: center;
+    padding-top: .20em;
+    color: rgb(73, 0, 218);
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+input{
+    background-color: rgb(127, 6, 187);
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+}
+form{
+      display: flex;
+      flex-direction: column;
+      padding-left: 1em;
+      width: 80%;
+}
+
+input, texttarea {margin-bottom: .5em;}
+
+button{
+    background-color: #abb753;
+    border-radius:20px;
+    border-color: #7344df9d;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
 
 h2 {
      color: #d8165e; 
@@ -103,17 +156,13 @@ nav {
      font-weight: bold;
      background-color: #ffdab9;
      padding-top: .5em;
-     padding-right:.5em;
+     padding-right: .5em;
      padding-bottom: .5em;
      text-align: center;
 }
 
 nav a {
     text-decoration: none;
-}
-.resort {
-      color: #1976d2;
-     font-size: 1.2em; 
 }
 
 footer {
@@ -123,28 +172,33 @@ footer {
      padding: 1em; 
 }
 
-#wrapper { 
-       width: 80%;
-       margin-right: auto;
-       margin-left: auto;
-       background-color: #ffb349;
-       min-width: 960px;
-       max-width: 2048px;
-       box-shadow: 5px 5px 5px #1e1e1e;
+.container{
+    width: 400px;
+    height: 350px;
 }
 
-h3 {
-    font-family: Georgia,serif;
+section{
+    background-color: #e07511;
+    color: #ccc;
+}
+
+#wrapper { 
+       width: 100%;
+       background-color: hsla(321, 90%, 57%, 0.396);
+       min-width: 950px;
+       max-width: 1000px;
+       box-shadow: 5px 5px 5px #1e1e1e;
+       margin: auto;
 }
 
 #homehero {
     height: 300px;
-    background-image: url(Cardboard.jpgS);
+    background-image: url(img/A&C.webp);
     background-size: 100% 100%; 
 }
-#galleryhero {
+#gallhero {
     height: 300px;
-    background-image: url(yurts.jpg);
+    background-image: url(img/animal.webp);
     background-size: 100% 100%; 
 }
 #referencehero {
@@ -231,7 +285,7 @@ h3 {
 /* Large Display */
 @media (min-width: 1024px) {
     body {
-        background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
+        background-image: linear-gradient(to bottom, #FFFFFF 20%, #70b4fcc6 60%, #00dffcab 100%);
     }
 
     nav ul {
@@ -253,4 +307,23 @@ h3 {
     content: "";
     display: table;
     clear: both;
+}
+
+@media (max-width: 599px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  body {
+    padding: 10px;
+  }
 }
